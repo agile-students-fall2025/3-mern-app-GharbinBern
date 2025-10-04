@@ -1,4 +1,3 @@
-// Simple script to add your About Us data to the database
 // Run this with: node addAboutUsData.js
 
 const mongoose = require('mongoose')
@@ -20,7 +19,7 @@ mongoose
     process.exit(1)
   })
 
-// Your about us data
+// about us data
 const myAboutUsData = {
   name: "Gharbin Bernard",
   about: "Hello! I'm a computer science student with a growing passion for full-stack web development.\n\nI love working with data—cleaning it, analyzing it, and turning it into something meaningful. Now I'm channeling that passion into building web applications using the MERN stack (MongoDB, Express, React, Node.js).\n\nThis project showcases my ability to design both frontend and backend components, making them work together seamlessly to solve real problems. I enjoy bridging logic and creativity—structuring databases one moment, refining user experiences the next.\n\nOutside of coding, you'll find me trying out new sports (sometimes successfully, sometimes hilariously not). I believe in balancing learning, challenge, and fun both on and off the screen!",
@@ -33,7 +32,7 @@ async function addAboutUsData() {
     // Clear any existing data
     await AboutUs.deleteMany({})
     
-    // Add your data
+    // Add data
     const aboutUs = new AboutUs(myAboutUsData)
     await aboutUs.save()
     
