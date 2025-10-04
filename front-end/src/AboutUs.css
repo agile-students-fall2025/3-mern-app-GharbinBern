@@ -1,0 +1,22 @@
+/* Simple About Us styling */
+
+.about-item {
+  padding: 20px;
+}
+
+.about-item h2 {
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+}
+
+.about-image img {
+  width: 300px;
+  height: auto;
+}
+
+.error {
+  color: red;
+}
